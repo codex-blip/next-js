@@ -72,3 +72,7 @@ This application is ready for deployment on [Vercel](https://vercel.com/), the p
 3.  Import your GitHub repository.
 4.  Add your Firebase environment variables in the Vercel project settings.
 5.  Deploy! Vercel will automatically build and deploy your Next.js application.
+
+## Acknowledgements
+
+This project was inspired by the work of [jamezmca](https://github.com/jamezmca).
