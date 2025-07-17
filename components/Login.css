@@ -1,0 +1,51 @@
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Font styling for login container */
+.login-container {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Brand title font */
+.login-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Headings font */
+.login-container h2,
+.login-container h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* Paragraph and label font */
+.login-container p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Input fields font */
+.login-container input {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Button fonts */
+.submit-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.card-button-secondary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+#err{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}

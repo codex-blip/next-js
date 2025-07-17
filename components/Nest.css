@@ -1,0 +1,88 @@
+/* Import fonts for Nest component */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+/* Base font for the component */
+.nest-container article {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Markdown headers */
+.nest-container article h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+}
+
+.nest-container article h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.nest-container article h3,
+.nest-container article h4,
+.nest-container article h5,
+.nest-container article h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+/* Paragraph text */
+.nest-container article p {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* Lists */
+.nest-container article ul,
+.nest-container article ol {
+    font-family: 'Inter', sans-serif;
+}
+
+.nest-container article li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Links */
+.nest-container article a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+/* Code and preformatted text */
+.nest-container article code,
+.nest-container article pre {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Blockquotes */
+.nest-container article blockquote {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Strong and emphasis */
+.nest-container article strong {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.nest-container article em {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: 600;
+}

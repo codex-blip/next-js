@@ -1,0 +1,117 @@
+/* Import creative and modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap');
+
+/* Main navigation container */
+.nav {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom scrollbar styling for SideNav */
+.nav::-webkit-scrollbar {
+    width: 8px;
+}
+
+.nav::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.nav::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Firefox scrollbar styling */
+.nav {
+    scrollbar-width: thin;
+    scrollbar-color: #667eea rgba(255, 255, 255, 0.1);
+}
+
+/* Notes list scrollbar styling */
+.notes-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.notes-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.notes-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+.notes-list::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Brand title with elegant font */
+
+
+.nav h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-size: 1.75rem;
+}
+
+/* Subtitle with clean font */
+.nav h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Button text styling */
+.nav button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    font-size: 0.95rem;
+}
+
+.nav button h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Notes list paragraph */
+.notes-list p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Card button secondary styling */
+.card-button-secondary {
+    font-family: 'Inter', sans-serif;
+}
+
+.card-button-secondary p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.card-button-secondary small {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    opacity: 0.8;
+}
