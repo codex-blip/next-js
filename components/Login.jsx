@@ -11,11 +11,28 @@ export default function Login() {
     const [isRegister , setIsRegister] = useState(false);
     const [isAuthenticating, setIsAuthenticating] = useState(false);
     const [error, setError] = useState(null);
+    const [resetMessage, setResetMessage] = useState('');
 
-    const {login,signup} = useAuth();
+    const {login,signup, resetPassword} = useAuth();
     const router = useRouter();
 
     const cantAuth = (!email.includes('@') || password.length < 6) 
+
+    async function handleForgotPassword() {
+        if (!email) {
+            setError("Please enter your email to reset your password.");
+            setResetMessage('');
+            return;
+        }
+        try {
+            await resetPassword(email);
+            setResetMessage("Password reset email sent. Check your inbox.");
+            setError(null);
+        } catch (err) {
+            setError(err.message);
+            setResetMessage('');
+        }
+    }
 
     async function handleAuthUser() {
 
@@ -76,13 +93,14 @@ export default function Login() {
                     {isAuthenticating ? 'Submitting...' : 'Submit'}
                 </button>
                 <p id = 'err'>{error && <p className="error-message">{error}</p>}</p>
+                <p id = 'err'>{resetMessage && <p className="success-message">{resetMessage}</p>}</p>
                 <div className="secondary-btns-container">
                     <button className="card-button-secondary" onClick = {() => {
                         setIsRegister(!isRegister);
                     }}>
                         <small>{!isRegister ? 'Sign Up' : 'Log In'}</small>
                     </button>
-                    <button className='card-button-secondary'>
+                    <button className='card-button-secondary' onClick={handleForgotPassword}>
                         <small>Forgot Password?</small>
                     </button>
                 </div>

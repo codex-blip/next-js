@@ -5,6 +5,7 @@ NotesNest is a full-stack, feature-rich note-taking application built with moder
 ## Features
 
 - **User Authentication**: Secure login and registration system powered by Firebase Authentication.
+- **Forgot Password**: Users can securely reset their password via an email link.
 - **Create & Edit Notes**: A powerful and intuitive editor allows you to create and modify notes with ease.
 - **Markdown Support**: Write notes in Markdown and see them beautifully rendered in the viewer.
 - **Real-Time Database**: All notes are stored and synchronized in real-time using Firestore, ensuring your data is always current across devices.
